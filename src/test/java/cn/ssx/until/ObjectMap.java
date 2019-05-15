@@ -1,7 +1,9 @@
 package cn.ssx.until;
 
+import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.xml.sax.Locator;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -31,6 +33,18 @@ public class ObjectMap {
         String locator = properties.getProperty(ElemnetNameInprofile);
         String locatorType = locator.split("-")[0];
         String locatorVaule = locator.split("-")[1];
+        //用getbyte方法将字符串编码转换为UTF-8，解决配置文件中文乱码
+        locatorVaule = new String(locator.getBytes("ISO-8859-1"),"UTF-8");
+        System.out.println("获的定位类型取"+locatorType+"\t获取的表达式"+locatorVaule);
+        if (locatorType.toLowerCase().equals("id"))
+            return By.id(locatorVaule);
+        else if (locatorType.toLowerCase().equals("name"))
+            return By.name(locatorVaule);
+        else
+            throw new Exception("");
+
     }
+
+
 
 }
