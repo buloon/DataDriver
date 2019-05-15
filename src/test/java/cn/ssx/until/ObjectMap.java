@@ -12,7 +12,8 @@ import java.util.Properties;
 public class ObjectMap {
     Properties properties;
     private static Logger Log = Logger.getLogger(ObjectMap.class.getName());
-    public ObjectMap(String profile){
+    public ObjectMap(){
+        String profile = ObjectMap.class.getClassLoader().getResource("").getPath();
         try {
             FileInputStream in= new FileInputStream(profile);
             //读取java配置文件
