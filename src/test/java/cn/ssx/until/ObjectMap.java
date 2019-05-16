@@ -1,9 +1,6 @@
 package cn.ssx.until;
 
-import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.xml.sax.Locator;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -14,8 +11,9 @@ import java.util.Properties;
 public class ObjectMap {
     Properties properties;
     private static Logger Log = Logger.getLogger(ObjectMap.class.getName());
-    public ObjectMap(){
-        String profile = ObjectMap.class.getClassLoader().getResource("").getPath();
+
+    public ObjectMap(String filename){
+        String profile = ObjectMap.class.getClassLoader().getResource(filename).getPath();
         try {
             FileInputStream in= new FileInputStream(profile);
             //读取java配置文件
@@ -28,18 +26,18 @@ public class ObjectMap {
         }
     }
 
-    public By getlocator(String ElemnetNameInprofile) throws Exception{
+    public String getlocator(String ElemnetNameInprofile) throws Exception{
         //根据变量elemenameinprofile，从属性配置文件中读取对应的配置文件
         String locator = properties.getProperty(ElemnetNameInprofile);
-        String locatorType = locator.split("-")[0];
-        String locatorVaule = locator.split("-")[1];
+        String locatorType = locator.split("=")[0];
+        String locatorVaule = locator.split("=")[1];
         //用getbyte方法将字符串编码转换为UTF-8，解决配置文件中文乱码
         locatorVaule = new String(locator.getBytes("ISO-8859-1"),"UTF-8");
         System.out.println("获的定位类型取"+locatorType+"\t获取的表达式"+locatorVaule);
-        if (locatorType.toLowerCase().equals("id"))
-            return By.id(locatorVaule);
-        else if (locatorType.toLowerCase().equals("name"))
-            return By.name(locatorVaule);
+        if (locatorType.toLowerCase().equals("loginname"))
+            return locatorVaule;
+        else if (locatorType.toLowerCase().equals("passwd"))
+            return locatorVaule;
         else
             throw new Exception("");
 
