@@ -19,6 +19,7 @@ public class LoginPage {
     }
 
     public WebElement loginname()throws Exception{
+        //test.propertiees中“=”后面的内容就是getlocator的内容
         element=webDriver.findElement(By.id(objectMap.getlocator("loginname")));
         System.out.println(element);
         return element;

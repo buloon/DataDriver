@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc78f479-4907-4000-a572-cb0b0b8050a2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/appModules/Login_Action.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/pageObjects/LoginPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/testScripts/TestLogin.java" />
+    <list default="true" id="fc78f479-4907-4000-a572-cb0b0b8050a2" name="Default" comment="2019.05.16">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DataDriver/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../DataDriver/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/pageObjects/LoginPage.java" afterPath="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/pageObjects/LoginPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/until/ObjectMap.java" afterPath="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/until/ObjectMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DataDriver/src/test/resources/test.properties" afterPath="$PROJECT_DIR$/../DataDriver/src/test/resources/test.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/../DataDriver/out/" />
     <ignored path="$PROJECT_DIR$/../DataDriver/target/" />
@@ -33,21 +30,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObjectMap.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ObjectMap.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/until/ObjectMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="346">
+              <caret line="30" column="68" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/pageObjects/LoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+            <state relative-caret-position="298">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#433#434#0" expanded="true" />
@@ -101,7 +98,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../DataDriver" />
     <option name="PUSH_TAGS">
-      <GitPushTagMode />
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
     </option>
   </component>
   <component name="GradleLocalSettings">
@@ -118,9 +118,9 @@
         <option value="$PROJECT_DIR$/../DataDriver/src/test.properties" />
         <option value="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/test/test.java" />
         <option value="$PROJECT_DIR$/../DataDriver/src/test/resources/test.properties" />
+        <option value="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/testScripts/TestLogin.java" />
         <option value="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/until/ObjectMap.java" />
         <option value="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/pageObjects/LoginPage.java" />
-        <option value="$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/testScripts/TestLogin.java" />
       </list>
     </option>
   </component>
@@ -1021,7 +1021,7 @@
       <workItem from="1557834258812" duration="2959000" />
       <workItem from="1557918503513" duration="2360000" />
       <workItem from="1557920898972" duration="3015000" />
-      <workItem from="1557968897735" duration="6009000" />
+      <workItem from="1557968897735" duration="6644000" />
     </task>
     <task id="LOCAL-00001" summary="2019.05.15">
       <created>1557923880859</created>
@@ -1030,7 +1030,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557923880859</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2019.05.16">
+      <created>1558008553245</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558008553245</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1051,7 +1058,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14343000" />
+    <option name="totallyTimeSpent" value="14978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1099,18 +1106,11 @@
       <path value="$PROJECT_DIR$/../DataDriver" />
     </ignored-roots>
     <MESSAGE value="2019.05.15" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019.05.15" />
+    <MESSAGE value="2019.05.16" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019.05.16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/pageObjects/LoginPage.java</url>
-          <line>10</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -1187,14 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/resources/test.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.9.7/testng-6.9.7.jar!/org/testng/SuiteRunnerWorker.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -1205,10 +1197,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/until/ObjectMap.java">
+    <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/appModules/Login_Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="80">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1223,23 +1215,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/appModules/Login_Action.java">
+    <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/resources/test.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="32">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/pageObjects/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state relative-caret-position="298">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#433#434#0" expanded="true" />
             <element signature="e#474#475#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../DataDriver/src/test/java/cn/ssx/until/ObjectMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="30" column="68" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>

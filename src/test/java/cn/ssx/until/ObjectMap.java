@@ -27,7 +27,7 @@ public class ObjectMap {
     }
 
     public String getlocator(String ElemnetNameInprofile) throws Exception{
-        //根据变量elemenameinprofile，从属性配置文件中读取对应的配置文件
+        //根据变量elemenameinprofile，从属性配置文件中读取对应的配置文件，变量locator是读取出的内容
         String locator = properties.getProperty(ElemnetNameInprofile);
         String locatorType = locator.split("=")[0];
         String locatorVaule = locator.split("=")[1];
