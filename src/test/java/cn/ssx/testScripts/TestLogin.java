@@ -1,7 +1,7 @@
 package cn.ssx.testScripts;
 
+import cn.ssx.appModules.Login_Action;
 import cn.ssx.pageObjects.LoginPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -20,12 +20,14 @@ public class TestLogin {
     @Test
     public void tsetlogin1( ) throws  Exception{
         webDriver.get(url +"/");
-        LoginPage loginPage =new LoginPage(webDriver);
+        LoginPage loginPage =new LoginPage();
         //相同与webDriver.findElement(By.id("xx")).sendKeys("admin");xx是loginname
         //中loginname方法的参数
-        loginPage.loginname().sendKeys("admin");
+        /*loginPage.loginname().sendKeys("admin");
         loginPage.passwd().sendKeys("admin");
         webDriver.findElement(By.id("loginbutton")).click();
+        Thread.sleep(5000);*/
+        Login_Action.execute(webDriver,"admin","admin");
         Thread.sleep(5000);
         Assert.assertTrue(webDriver.getPageSource().contains("登陆成功"));
     }

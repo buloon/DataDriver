@@ -28,6 +28,7 @@ public class ObjectMap {
 
     public String getlocator(String ElemnetNameInprofile) throws Exception{
         //根据变量elemenameinprofile，从属性配置文件中读取对应的配置文件，变量locator是读取出的内容
+        //getProperty ( String key)，用指定的键在此属性列表中搜索属性。也就是通过参数 key ，得到 key 所对应的 value。
         String locator = properties.getProperty(ElemnetNameInprofile);
         String locatorType = locator.split("=")[0];
         String locatorVaule = locator.split("=")[1];
@@ -39,7 +40,7 @@ public class ObjectMap {
         else if (locatorType.toLowerCase().equals("passwd"))
             return locatorVaule;
         else
-            throw new Exception("");
+            throw new Exception("配置文件test.properties错误");
 
     }
 

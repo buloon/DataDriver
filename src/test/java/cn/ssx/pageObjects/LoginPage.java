@@ -14,9 +14,9 @@ public class LoginPage {
     //指定页面元素定位表达式配置文件
     private ObjectMap objectMap = new ObjectMap("test.properties");
     private WebDriver webDriver;
-    public LoginPage(WebDriver webDriver){
+    /*public LoginPage(WebDriver webDriver){
         this.webDriver =webDriver;
-    }
+    }*/
 
     public WebElement loginname()throws Exception{
         //test.propertiees中“=”后面的内容就是getlocator的内容
